@@ -1,11 +1,6 @@
-namespace bubbleSorting {
-    class Program {
-        static void Main(string[] args) {
-            int[] numbers = { 32, 1, 43, 81, 2, 17, 99, 23, 47, 431, 321, 42 };
-
-            for (int i = numbers.Length - 1; i >= 0; i--)
+for (int i = numbers.Length; i > 0; i--)
             {
-                for (int j = 0; j < i ; j++)
+                for (int j = 0; j < i - 1  ; j++)
                 {
                     if (numbers[j] > numbers[j + 1])
                     {
@@ -16,15 +11,3 @@ namespace bubbleSorting {
                     }
                 }
             }
-
-            Console.WriteLine("Bubble sorting: ");
-
-            foreach (int n in numbers)
-            {
-                Console.WriteLine(n);
-            }
-
-            Console.ReadKey();
-        }
-    }
-}
