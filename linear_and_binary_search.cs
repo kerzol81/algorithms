@@ -13,11 +13,11 @@ namespace Linear_vs_Binary_Search {
             {
                 middle = (low + high) / 2;
 
-                if (middle == key)
+                if (array[middle] == key)
                 {
-                    return array[middle];
+                    return middle;
                 }
-                else if (middle < key)
+                else if (array[middle] < key)
                 {
                     low = middle + 1;
                 }
