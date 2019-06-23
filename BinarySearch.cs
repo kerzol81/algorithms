@@ -1,17 +1,21 @@
-private static int BinarySearch(int[] array, int item) {
-            int left = 0;
-            int right = array.Length - 1;
+static int BinarySearch(int[] array, int key) {
+            int low = 0;
+            int high = array.Length;
+            int middle;
 
-            while (left <= right)
+            while (low <= high)
             {
-                int middle = (left + right) / 2;
+                middle = (low + high) / 2;
 
-                if (array[middle] == item)
-                    return middle;
-                if (item < array[middle])
-                    right = middle - 1;
+                if (middle == key)
+                {
+                    return array[middle];
+                }
+                else if (middle < key)
+                {
+                    low = middle + 1;
+                }
                 else
-                    left = middle + 1;
+                    high = middle - 1;
             }
-            return -1;
-        }
+            return 0;
