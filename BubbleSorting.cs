@@ -3,7 +3,7 @@ Bubble Sorting
 
 The outter loop (i) runs from the end of the list until the first element.
 The inner loop (j) runs from the fist element until i-1.
-Then we switch the inner loops elements if the first element is bigger than the second.
+Then we switch elements in the inner loop if the first is bigger than the second.
 
 */
 
