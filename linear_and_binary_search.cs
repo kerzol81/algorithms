@@ -6,7 +6,7 @@ namespace Linear_vs_Binary_Search {
 
         static int BinarySearch(int[] array, int key) {
             int low = 0;
-            int high = array.Length;
+            int high = array.Length-1;
             int middle;
 
             while (low <= high)
