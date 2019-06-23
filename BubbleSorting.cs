@@ -1,3 +1,14 @@
+/*
+Bubble Sorting
+
+The outter loop (i) runs from the end of the list until the first element.
+The inner loop (j) runs from the fist element until i-1.
+Then we switch the inner loops elements if the first element is bigger than the second.
+
+*/
+
+
+
 for (int i = numbers.Length; i > 0; i--)
 {           
             for (int j = 0; j < i - 1  ; j++)
