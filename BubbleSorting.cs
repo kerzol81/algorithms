@@ -1,5 +1,5 @@
 /*
-Bubble Sorting
+                              Bubble Sorting
 
 The outter loop (i) runs from the end of the list until the first element.
 The inner loop (j) runs from the fist element until i-1.
