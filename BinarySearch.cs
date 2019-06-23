@@ -1,3 +1,9 @@
+/*
+
+Binary or Logarithmic Search
+
+*/
+
 static int BinarySearch(int[] array, int key) {
             int low = 0;
             int high = array.Length;
