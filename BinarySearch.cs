@@ -6,18 +6,19 @@ Binary or Logarithmic Search
 
 static int BinarySearch(int[] array, int key) {
             int low = 0;
-            int high = array.Length;
+            int high = array.Length - 1;
             int middle;
 
             while (low <= high)
+
             {
                 middle = (low + high) / 2;
 
-                if (middle == key)
+                if (array[middle] == key)
                 {
-                    return array[middle];
+                    return middle;
                 }
-                else if (middle < key)
+                else if (array[middle] < key)
                 {
                     low = middle + 1;
                 }
