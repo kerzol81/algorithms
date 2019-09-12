@@ -4,7 +4,8 @@ namespace CoreAlgorithms
 {
     static internal class Algorithms
     {
-        internal static void MaxIndex(int[] array) {
+        internal static void MaxIndex(int[] array)
+        {
             int max = 0;
             for (int i = 1; i < array.Length; i++)
             {
@@ -15,7 +16,8 @@ namespace CoreAlgorithms
             }
             Console.WriteLine(max);
         }
-        internal static void MaxValue(int[] array) {
+        internal static void MaxValue(int[] array)
+        {
             int max = array[0];
             for (int i = 1; i < array.Length; i++)
             {
@@ -26,7 +28,8 @@ namespace CoreAlgorithms
             }
             Console.WriteLine(max);
         }
-        internal static void MinIndex(int[] array) {
+        internal static void MinIndex(int[] array)
+        {
             int min = 0;
             for (int i = 1; i < array.Length; i++)
             {
@@ -37,7 +40,8 @@ namespace CoreAlgorithms
             }
             Console.WriteLine(min);
         }
-        internal static void MinValue(int[] array) {
+        internal static void MinValue(int[] array)
+        {
             int min = array[0];
             for (int i = 1; i < array.Length; i++)
             {
@@ -48,7 +52,8 @@ namespace CoreAlgorithms
             }
             Console.WriteLine(min);
         }
-        internal static void Total(int[] array) {
+        internal static void Total(int[] array)
+        {
             int total = 0;
             foreach (int i in array)
             {
@@ -56,7 +61,8 @@ namespace CoreAlgorithms
             }
             Console.WriteLine(total);
         }
-        internal static void Average(int[] array) {
+        internal static void Average(int[] array)
+        {
             double average = 0;
             double total = 0;
             foreach (int i in array)
@@ -65,6 +71,22 @@ namespace CoreAlgorithms
             }
             average = total / array.Length;
             Console.WriteLine(average);
+        }
+        internal static void SearchElement(int[] array, int element)
+        {
+            int i = 0;
+            while (i < array.Length && array[i] != element)
+            {
+                i++;
+            }
+            if (i < array.Length)
+            {
+                Console.WriteLine($"Element found at index: {i}");
+            }
+            else
+            {
+                Console.WriteLine("No such element in the array");
+            }
         }
     }
 }
