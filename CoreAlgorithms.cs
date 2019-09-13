@@ -88,5 +88,15 @@ namespace CoreAlgorithms
                 Console.WriteLine("No such element in the array");
             }
         }
+        internal static bool Decide(int[] array, int element) {
+            bool answer = false;
+            int i = 0;
+            while (i < array.Length && array[i] != element)
+            {
+                i++;
+            }
+            answer = i < array.Length;
+            return answer;
+        }
     }
 }
