@@ -1,8 +1,4 @@
-/*
-
-Binary or Logarithmic Search
-
-*/
+// Binary or Logarithmic Search
 
 static int BinarySearch(int[] array, int key) {
             int low = 0;
