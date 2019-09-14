@@ -98,5 +98,33 @@ namespace CoreAlgorithms
             answer = i < array.Length;
             return answer;
         }
+        internal static int BinarySearch(int[] ordered_array, int element) {
+            int low = 0;
+            int high = ordered_array.Length;
+            int middle;
+
+            if (low > element && element < high)
+            {
+                do
+                {
+                    middle = (low + high) / 2;
+
+                    if (ordered_array[middle] < element)
+                    {
+                        low = middle + 1;
+                    }
+                    else if (ordered_array[middle] > element)
+                    {
+                        high = middle - 1;
+                    }
+
+                } while (low <= high && ordered_array[middle] != element);
+                return middle;
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }
